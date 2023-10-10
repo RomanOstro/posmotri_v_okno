@@ -35,9 +35,16 @@ html {
   display: flex;
   justify-content: center;
   align-items: end;
-  inline-size: 100%;
   gap: 30px;
 }
+
+.result {
+  display: flex;
+  inline-size: 100%;
+  block-size: 100%;
+  flex-direction: column;
+  justify-content: flex-end;
+  }
 
 .result__video-container {
   position: relative;
@@ -63,14 +70,12 @@ html {
   display: flex;
   flex-direction: column;
   justify-content: end;
-  gap: 26px;
-  inline-size: 100%;
-  block-size: 100%;
+  
 }
 
 .content__list {
   position: relative;
-  height: 298px;
+  block-size: 304px;
   overflow: auto;
   margin-bottom: -3px;
   padding: 2px 2px 4px 3px;
@@ -92,7 +97,7 @@ html {
 
 .content__video-card-thumbnail {
   width: 194px;
-  height: 103px;
+  height: 102px;
   object-fit: cover;
   object-position: center;
 }
@@ -114,16 +119,11 @@ html {
   font-weight: 700;
   line-height: 0.94;
   text-transform: uppercase;
+  margin-bottom: 20px;
 }
 
 .title .content__accent {
   color: #545050;
-  font-family: Oswald;
-  font-size: 75px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 0.94;
-  text-transform: uppercase;
 }
 
 .content__card-link {
@@ -131,6 +131,7 @@ html {
   text-decoration: none;
   color: #fff;
   margin: 2px;
+  padding: 2px 0;
 }
 
 .content__video-card-title {
@@ -173,7 +174,7 @@ html {
 /* Инпут и его состояния*/
 .search-form__textfield {
   color: rgba(255, 255, 255, 0.7);
-  font-family: inherit;
+  font-family: "Fira Sans Condensed";
   font-size: inherit;
   font-weight: inherit;
   appearance: none;
@@ -182,7 +183,7 @@ html {
   border-bottom: 1px solid #fff;
   border-left: none;
   border-right: none;
-  padding: 2.5px 14px 2.5px 0;
+  padding: 2.5px 12px 2.5px 0;
   inline-size: 225px;
   block-size: 27px;
 }
@@ -275,11 +276,11 @@ html {
 }
 
 .search-form__submit-button {
-  padding: 6px 73.5px;
+  padding: 5px 73.5px;
 }
 
 .more-button {
-  padding: 6px 142.3px;
+  padding: 5px 142.3px;
 
 }
 
