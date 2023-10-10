@@ -4,6 +4,26 @@
   box-sizing: border-box;
 }
 
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+ol,
+li,
+blockquote,
+fieldset {
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+
 html {
   block-size: 100%;
 }
@@ -35,6 +55,7 @@ html {
   display: flex;
   justify-content: center;
   align-items: end;
+  inline-size: 1140px;
   gap: 30px;
 }
 
@@ -50,6 +71,7 @@ html {
   position: relative;
   width: 711px;
   height: 386px;
+  margin-bottom: 16px;
 }
 
 .result__video {
@@ -63,43 +85,39 @@ html {
   display: flex;
   align-items: start;
   gap: 40px;
-  padding-top: 16px;
 }
 
 .content__details {
   display: flex;
   flex-direction: column;
-  justify-content: end;
+  justify-content: flex-end;
+  gap: 26px;
+  margin-bottom: -2px;
   
 }
 
 .content__list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
   position: relative;
-  block-size: 304px;
   overflow: auto;
-  margin-bottom: -3px;
-  padding: 2px 2px 4px 3px;
-}
-
-.content__list li {
-  margin-bottom: 30px;
-}
-
-.content__list li:last-child {
-  margin-bottom: 0;
+  block-size: 298px;
 }
 
 .content__video-card {
-  display: grid;
-  grid-template-columns: 1fr 194px;
-  align-items: start;
-}
+  display: flex;
+  justify-content: flex-start;
+ }
 
 .content__video-card-thumbnail {
-  width: 194px;
-  height: 102px;
+  inline-size: 194px;
+  block-size: 103px;
   object-fit: cover;
   object-position: center;
+}
+.content__video-card-description-container {
+  flex-grow:1;
 }
 
 /* Стили текстов*/
@@ -119,7 +137,6 @@ html {
   font-weight: 700;
   line-height: 0.94;
   text-transform: uppercase;
-  margin-bottom: 20px;
 }
 
 .title .content__accent {
@@ -130,8 +147,8 @@ html {
   display: block;
   text-decoration: none;
   color: #fff;
-  margin: 2px;
-  padding: 2px 0;
+  margin:2px;
+  
 }
 
 .content__video-card-title {
@@ -142,7 +159,6 @@ html {
   line-height: 1;
   text-transform: uppercase;
   margin-bottom: 6px;
-  margin-top: 6px;
 }
 
 .content__video-card-description {
@@ -277,11 +293,13 @@ html {
 
 .search-form__submit-button {
   padding: 5px 73.5px;
+  
 }
 
 .more-button {
+  inline-size: 394px;
   padding: 5px 142.3px;
-
+  margin: 3px; 
 }
 
 /*Сотояния видео карточек*/
@@ -308,21 +326,3 @@ html {
   background: #545050;
 }
 
-h1,
-h2,
-h3,
-h4,
-p,
-ul,
-ol,
-li,
-blockquote,
-fieldset {
-  margin: 0;
-  padding: 0;
-}
-
-ul,
-ol {
-  list-style: none;
-}
